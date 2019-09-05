@@ -64,6 +64,7 @@ class UserController extends Controller
     	$user->date_of_birth = Carbon::parse($request->date_of_birth);
     	$user->preferred_contact_method = $request->preferred_contact_method;
     	$user->gender = $request->gender;
+    	$user->modified_by = 'admin_user';
         $user ->save();
 
     	return redirect('/users');

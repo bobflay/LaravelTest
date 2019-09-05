@@ -1,4 +1,5 @@
 @extends('layout.master')
+
 @section('content')
 
 <section class="content-header">
