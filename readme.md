@@ -16,6 +16,8 @@ The whole project is dockerized inside a docker container.
 - Open the project directory in Terminal
 - Run `docker-compose up -d`
 - Docker will download all the needed images and will handle the setup of the environment. Once done you will be able to access the project from your browser.
+- Migrate the database using the following command `docker-compose exec app php artisan migrate`
+- Seed the database with fake data with the following command `docker-compose exec app php artisan db:seed`
 
 
 ## License
